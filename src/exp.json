@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "institution": "3C KMK",
+    "position": "Web Developer",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt recusandae nesciunt sequi exercitationem quo officia maximedeleniti, magnam commodi consectetur, non vero iste debitis,explicabo aut error natus quod temporibus.",
+    "startDate": "April 2023",
+    "endDate": "Present"
+  },
+  {
+    "id": 2,
+    "institution": "ISE 2023",
+    "position": "Front End Developer",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt recusandae nesciunt sequi exercitationem quo officia maximedeleniti, magnam commodi consectetur, non vero iste debitis,explicabo aut error natus quod temporibus.",
+    "startDate": "April 2023",
+    "endDate": "Present"
+  }
+]
