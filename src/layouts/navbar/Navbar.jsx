@@ -1,5 +1,5 @@
 import { useState } from "react";
-import NavbarList from "./NavbarList";
+import NavbarList from "../../components/navbar/NavbarList";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState();
@@ -24,7 +24,7 @@ function Navbar() {
         </div>
         {/* <!-- md end --> */}
         {/* <!-- burgerlist button start --> */}
-        <div className="flex items-center w-full justify-end mr-8 md:hidden">
+        <div className="flex items-center w-full justify-end mr-8  md:hidden">
           <button
             className="focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
@@ -35,9 +35,15 @@ function Navbar() {
         {/* <!-- burgerlist button end --> */}
       </div>
       {/* <!-- navbar burgerlist --> */}
-      <nav id="navbar" className={`${isOpen ? "" : "hidden"}`}>
-        <div className="bg-red-600 h-screen w-[45%] md:w-[25%] right-0 top-0 absolute pl-8">
-          <ul>
+      <nav id="navbar">
+        <div
+          className={` transition-all duration-500 ${
+            isOpen
+              ? "bg-red-600 h-screen w-[45%] md:w-[25%] right-0 top-0 absolute pl-8"
+              : "w-0"
+          }`}
+        >
+          <ul className={`${isOpen ? " " : "hidden"}`}>
             <li>
               <button
                 className="mb-5 md:mb-10 mt-7"
